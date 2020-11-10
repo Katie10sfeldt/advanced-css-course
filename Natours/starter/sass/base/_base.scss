@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%; /* Good idea to set font size to multiple of 10 (to convert sizes to rems), and then the root should be a percentage of 16 (default browser font size) Makes it more dynamic for users who need larger font sizes*/
+}
+
+body {
+	box-sizing: border-box;
+}
