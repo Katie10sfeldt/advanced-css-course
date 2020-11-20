@@ -9,12 +9,9 @@
 	background-size: cover;
 	background-position: top; /* This makes sure the top of the image stays in the same place. If we changed to say bottom, it would keep the bottom in the same place. Same for center */
 	position: relative;
-	clip-path: polygon(
-		0 0,
-		100% 0,
-		100% 75vh,
-		0 100%
-	); /* This is what controls the angles. Goes clockwise to each corner */
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	/* This is what controls the angles. Goes clockwise to each corner */
 
 	&__logo-box {
 		position: absolute;
