@@ -89,6 +89,7 @@
 		-o-border-radius: 50%;
 
 		&::after {
+			@include item-center;
 			content: '';
 			display: block;
 			height: 1.3rem;
@@ -98,14 +99,6 @@
 			-moz-border-radius: 50%;
 			-ms-border-radius: 50%;
 			-o-border-radius: 50%;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			-webkit-transform: translate(-50%, -50%);
-			-moz-transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
-			-o-transform: translate(-50%, -50%);
 			background-color: $color-primary;
 			opacity: 0;
 			transition: opacity 0.2s;
