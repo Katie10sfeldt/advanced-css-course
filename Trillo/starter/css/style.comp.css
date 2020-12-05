@@ -504,3 +504,11 @@ body {
     animation: pulsate 1s infinite;
     -webkit-animation: pulsate 1s infinite;
     cursor: pointer; }
+
+.footer {
+  display: none; }
+  .footer_legal {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2.5rem;
+    color: var(--color-grey-light-4); }
