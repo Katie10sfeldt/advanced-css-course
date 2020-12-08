@@ -1,4 +1,39 @@
 .features {
-	background-color: $color-grey-light-2;
+	//overall styles
+
+	//inner layout
+	margin: 15rem 0;
+
+	//high level grid set up
 	grid-column: center-start / center-end;
+
+	//inner section grid set up
+	display: grid;
+	grid-gap: 6rem;
+	align-items: start;
+
+	//setting auto fit and minmax aids in responsive design
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.feature {
+	//inner grid set up
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-row-gap: 1.5rem;
+	grid-column-gap: 2.5rem;
+
+	&__icon {
+		fill: $color-primary;
+		width: 4.5rem;
+		height: 4.5rem;
+
+		//gridlayout
+		grid-row: 1 / span 2;
+		transform: translateY(-1rem);
+	}
+
+	&__text {
+		font-size: 1.7rem;
+	}
 }
