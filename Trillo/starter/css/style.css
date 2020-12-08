@@ -273,8 +273,30 @@ body {
 .gallery {
   display: flex; }
   .gallery__photo {
+    width: 100%; }
+  .gallery__item {
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: all 0.5s; }
+    .gallery__item:hover {
+      transform: scale(1.1); }
+  .gallery__caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
     width: 100%;
-    display: block; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: all 0.5s; }
+    .gallery__caption:hover {
+      opacity: 1; }
 
 .overview {
   display: flex;
