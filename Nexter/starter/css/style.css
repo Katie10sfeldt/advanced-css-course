@@ -198,11 +198,7 @@ body {
   .realtors__img {
     width: 7rem;
     border-radius: 50%;
-    display: block;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%; }
+    display: block; }
   .realtors__sold {
     text-transform: uppercase;
     color: #aaa;
